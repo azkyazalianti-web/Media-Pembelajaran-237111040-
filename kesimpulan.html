@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistem Keamanan Informasi - Kesimpulan</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #A376A2;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,255,255,0.1),
+          rgba(255,255,255,0.1) 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      font-family: "Bitter", serif; /* Menggunakan font dari link yang disediakan */
+    }
+
+    header {
+      background-color: #6B3F69;
+      padding: 20px 50px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideDown 1s ease-out; /* Animasi elegan untuk header */
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #fff;
+      animation: fadeIn 1.5s ease-in-out; /* Animasi fade in untuk logo */
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      animation: fadeInUp 1.2s ease-out; /* Animasi fade in dari bawah untuk menu */
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav .cta {
+      background-color: #DDC3C3;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      animation: bounceIn 1.5s ease-out; /* Animasi bounce untuk tombol login */
+    }
+
+    section {
+      padding: 40px 50px;
+      margin: 20px 0;
+      background-color: #fff;
+      border-radius: 8px;
+      animation: fadeIn 2s ease-in-out; /* Animasi fade in untuk section */
+    }
+
+    h1, h2 {
+      color: #2d3436;
+    }
+
+    section p {
+      margin-top: 15px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    section ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    section ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      animation: fadeInUp 2.5s ease-out; /* Animasi untuk list items */
+    }
+
+    section h2 {
+      margin-top: 30px;
+      animation: fadeInUp 2s ease-out; /* Animasi untuk sub-judul */
+    }
+
+    .conclusion-cta {
+      text-align: center;
+      margin-top: 30px;
+      animation: fadeInUp 2.5s ease-out; /* Animasi untuk tombol kesimpulan */
+    }
+
+    .conclusion-cta a {
+      background-color: #6B3F69;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s, transform 0.3s ease;
+      animation: pulse 2s infinite; /* Animasi pulse untuk tombol */
+    }
+
+    .conclusion-cta a:hover {
+      background-color: #A376A2;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #DDC3C3;
+      color: #000000;
+      animation: slideUp 1s ease-out; /* Animasi slide up untuk footer */
+    }
+
+    /* Hover effects - hanya untuk nav links, button tetap sama */
+    nav ul li a:hover {
+      color: #A376A2;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.05); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <header>
+    <nav>
+      <div class="logo">Sistem Keamanan Informasi</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tujuan.html">Tujuan</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="tugas.html">Tugas</a></li>
+        <li><a href="kuis.html">Kuis</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="kesimpulan.html">Kesimpulan</a></li>
+      </ul>
+      <a href="materi.html" class="cta">Ayo Belajar</a>
+    </nav>
+  </header>
+  <section id="kesimpulan">
+    <h1>Kesimpulan Pembelajaran Sistem Keamanan Informasi</h1>
+    <p>Selamat! Anda telah menyelesaikan perjalanan pembelajaran tentang Sistem Keamanan Informasi. Mari kita rangkum apa yang telah dipelajari dan refleksikan pentingnya keamanan informasi di era digital saat ini.</p>
+    
+    <h2>Poin Utama yang Dipelajari</h2>
+    <ul>
+      <li><strong>Dasar Keamanan Informasi:</strong> Memahami konsep CIA Triad (Confidentiality, Integrity, Availability) sebagai fondasi keamanan.</li>
+      <li><strong>Ancaman dan Kerentanan:</strong> Mengenali berbagai ancaman seperti malware, phishing, dan serangan jaringan, serta cara mencegahnya.</li>
+      <li><strong>Teknik Perlindungan:</strong> Menerapkan enkripsi, autentikasi, dan kontrol akses untuk melindungi data dan sistem.</li>
+      <li><strong>Manajemen Risiko:</strong> Mengidentifikasi, menilai, dan mengurangi risiko keamanan melalui pendekatan sistematis.</li>
+      <li><strong>Etika dan Hukum:</strong> Menjunjung tinggi etika dalam keamanan informasi dan mematuhi regulasi seperti GDPR atau UU ITE.</li>
+    </ul>
+    
+    <h2>Refleksi dan Pentingnya</h2>
+    <p>Keamanan informasi bukan hanya tentang teknologi, tetapi juga tentang kesadaran dan tanggung jawab. Di dunia yang semakin terhubung, ancaman siber dapat berdampak besar pada individu, perusahaan, dan masyarakat. Dengan pengetahuan yang Anda peroleh, Anda kini lebih siap untuk melindungi diri dan orang lain dari risiko digital.</p>
+    
+    <p>Ingatlah bahwa pembelajaran ini adalah awal. Teruslah update dengan perkembangan terkini, ikuti kursus lanjutan, atau sertifikasi seperti CompTIA Security+ untuk memperdalam keahlian Anda.</p>
+    
+    <div class="conclusion-cta">
+      <a href="home.html">Kembali ke Home</a>
+    </div>
+    
+    <p>Terima kasih telah belajar bersama! Jika Anda memiliki pertanyaan atau umpan balik, jangan ragu untuk menghubungi.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Azkya Zalianti Putri</p>
+  </footer>
+</body>
+</html>

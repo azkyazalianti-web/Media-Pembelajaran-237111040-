@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistem Keamanan Informasi</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #A376A2;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,255,255,0.1),
+          rgba(255,255,255,0.1) 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      font-family: "Bitter", serif; /* Menggunakan font dari link yang disediakan */
+    }
+
+    header {
+      background-color: #6B3F69;
+      padding: 20px 50px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideDown 1s ease-out; /* Animasi elegan untuk header */
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #fff;
+      animation: fadeIn 1.5s ease-in-out; /* Animasi fade in untuk logo */
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      animation: fadeInUp 1.2s ease-out; /* Animasi fade in dari bawah untuk menu */
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav .cta {
+      background-color: #DDC3C3;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      animation: bounceIn 1.5s ease-out; /* Animasi bounce untuk tombol login */
+    }
+
+    section {
+      padding: 40px 50px;
+      margin: 20px 0;
+      background-color: #fff;
+      border-radius: 8px;
+      animation: fadeIn 2s ease-in-out; /* Animasi fade in untuk section */
+    }
+
+    h1, h2 {
+      color: #2d3436;
+    }
+
+    section p {
+      margin-top: 15px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #DDC3C3;
+      color: #000000;
+      animation: slideUp 1s ease-out; /* Animasi slide up untuk footer */
+    }
+
+    /* Hover effects - hanya untuk nav links, button tetap sama */
+    nav ul li a:hover {
+      color: #A376A2;
+    }
+
+    /* Tambahan untuk section home agar lebih menarik */
+    #home {
+      text-align: center;
+      background-color: #DDC3C3;
+      padding: 120px 40px;
+      animation: zoomIn 1.5s ease-out; /* Animasi zoom in untuk section home */
+    }
+
+    /* Ukuran font diubah lebih kecil */
+    #home h1 {
+      font-size: 1.8em; /* dari 2.5em jadi 1.8em */
+      margin-bottom: 20px;
+      font-weight: 700;
+      animation: typeWriter 3s steps(40, end) forwards, fadeIn 2s ease-in-out; /* Animasi typing effect dan fade in untuk judul */
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #2d3436; /* Cursor untuk efek typing */
+    }
+
+    #home p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeInUp 2.5s ease-out; /* Animasi fade in dari bawah untuk paragraf */
+    }
+
+    #home .cta-home {
+      background-color: #6B3F69;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s, transform 0.3s ease;
+      animation: pulse 2s infinite; /* Animasi pulse untuk tombol */
+    }
+
+    #home .cta-home:hover {
+      transform: scale(1.05); /* Efek hover untuk tombol */
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.05); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes typeWriter {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <header>
+    <nav>
+      <div class="logo">Sistem Keamanan Informasi</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tujuan.html">Tujuan</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="tugas.html">Tugas</a></li>
+        <li><a href="kuis.html">Kuis</a></li>
+           <li><a href="game.html">Game</a></li>
+        <li><a href="kesimpulan.html">Kesimpulan</a></li>
+      </ul>
+      <a href="materi.html" class="cta">Ayo Belajar</a>
+    </nav>
+  </header>
+  <section id="home">
+    <h1>Selamat Datang di Media Pembelajaran Sistem Keamanan Informasi!</h1>
+    <p>Di sini Anda akan belajar tentang cara melindungi sistem informasi dari ancaman yang ada. Mari kita mulai perjalanan belajar Anda untuk menjadi ahli keamanan informasi!</p>
+    <a href="materi.html" class="cta-home">Mulai Belajar Sekarang</a>
+  </section>
+  <footer>
+    <p>&copy; 2025 Azkya Zalianti Putri</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistem Keamanan Informasi - Tujuan</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #A376A2;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,255,255,0.1),
+          rgba(255,255,255,0.1) 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      font-family: "Bitter", serif; /* Menggunakan font dari link yang disediakan */
+    }
+
+    header {
+      background-color: #6B3F69;
+      padding: 20px 50px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideDown 1s ease-out; /* Animasi elegan untuk header */
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #fff;
+      animation: fadeIn 1.5s ease-in-out; /* Animasi fade in untuk logo */
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      animation: fadeInUp 1.2s ease-out; /* Animasi fade in dari bawah untuk menu */
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav .cta {
+      background-color: #DDC3C3;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      animation: bounceIn 1.5s ease-out; /* Animasi bounce untuk tombol login */
+    }
+
+    section {
+      padding: 40px 50px;
+      margin: 20px 0;
+      background-color: #fff;
+      border-radius: 8px;
+      animation: fadeIn 2s ease-in-out; /* Animasi fade in untuk section */
+    }
+
+    h1, h2 {
+      color: #2d3436;
+    }
+
+    section p {
+      margin-top: 15px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    section ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    section ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      animation: fadeInUp 2.5s ease-out; /* Animasi untuk list items */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #DDC3C3;
+      color: #000000;
+      animation: slideUp 1s ease-out; /* Animasi slide up untuk footer */
+    }
+
+    /* Hover effects - hanya untuk nav links, button tetap sama */
+    nav ul li a:hover {
+      color: #A376A2;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.05); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <header>
+    <nav>
+      <div class="logo">Sistem Keamanan Informasi</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tujuan.html">Tujuan</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="tugas.html">Tugas</a></li>
+        <li><a href="kuis.html">Kuis</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="kesimpulan.html">Kesimpulan</a></li>
+
+      </ul>
+      <a href="materi.html" class="cta">Ayo Belajar</a>
+    </nav>
+  </header>
+  <section id="tujuan">
+    <h1>Tujuan Pembelajaran Sistem Keamanan Informasi</h1>
+    <p>Media pembelajaran ini dirancang untuk memberikan pemahaman mendalam tentang konsep, prinsip, dan praktik keamanan informasi. Dengan menyelesaikan materi ini, Anda diharapkan dapat:</p>
+    <ul>
+      <li>Memahami dasar-dasar keamanan informasi, termasuk ancaman, kerentanan, dan risiko yang terkait dengan sistem informasi.</li>
+      <li>Mengenali berbagai teknik dan alat yang digunakan untuk melindungi data dan sistem dari serangan siber.</li>
+      <li>Menerapkan praktik terbaik dalam manajemen keamanan informasi, seperti enkripsi, autentikasi, dan kontrol akses.</li>
+      <li>Mengembangkan keterampilan analisis risiko dan respons terhadap insiden keamanan.</li>
+      <li>Mendorong kesadaran tentang pentingnya etika dan kepatuhan hukum dalam keamanan informasi.</li>
+    </ul>
+    <p>Melalui pembelajaran interaktif ini, Anda akan siap menghadapi tantangan dunia digital yang semakin kompleks dan menjadi ahli di bidang keamanan informasi.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Azkya Zalianti Putri</p>
+  </footer>
+</body>
+</html>
